@@ -1,6 +1,6 @@
 # 🏏 Mini Cricket
 A simple command-line cricket game built using Python.
-The project is designed as a small hands-on project to practice Python programming fundamentals, clean code, modularization, and gradually introduce better software design concepts.
+The project is designed as a small hands-on project to practice Python programming fundamentals.
 ---
 ## 🎯 Project Goal
 Build a simple cricket game that can be played from the terminal.
