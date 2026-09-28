@@ -1,5 +1,5 @@
 import random
-
+ 
 def configure_match():
 
     overs = int(input("Enter number of overs: "))
@@ -13,3 +13,7 @@ def configure_match():
 def play_ball():
 
     return random.choice([0, 1, 2, 3, 4, 6])
+
+def update_score(current_score, runs):
+
+    return current_score + runs

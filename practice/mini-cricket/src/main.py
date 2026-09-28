@@ -1,4 +1,4 @@
-from game import configure_match, play_ball
+from src.game import configure_match, play_ball, update_score
 
 def main():
 
@@ -12,23 +12,21 @@ def main():
 
     overs, wickets, target = configure_match()
 
+    score = 0
+
     print()
-
-    print("Match Configuration")
-
-    print(f"Overs: {overs}")
-
-    print(f"Wickets: {wickets}")
 
     print(f"Target: {target}")
-
-    print()
 
     print("Playing first ball...")
 
     runs = play_ball()
 
+    score = update_score(score, runs)
+
     print(f" You scored {runs} run(s)!")
+
+    print(f"Score: {score}/{wickets}")
 
 if __name__ == "__main__":
 
