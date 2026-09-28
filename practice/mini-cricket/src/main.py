@@ -1,6 +1,7 @@
 from display import display_match_summary
 from game import (
     configure_match,
+    get_batting_strategy,
     get_overs_completed,
     increment_ball,
     is_wicket,
@@ -26,7 +27,8 @@ def main():
     total_balls = overs * 6
 
     while balls < total_balls:
-        outcome = play_ball()
+        strategy = get_batting_strategy()
+        outcome = play_ball(strategy)
 
         balls = increment_ball(balls)
 
