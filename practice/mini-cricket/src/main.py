@@ -1,4 +1,4 @@
-from game import (configure_match,play_ball,update_score,increment_ball)
+from game import (configure_match,get_overs_completed,increment_ball,play_ball,update_score)
 
 def main():
 
@@ -8,25 +8,37 @@ def main():
 
     print("=" * 32)
 
+    overs, wickets, target = configure_match()
+
     print()
 
-    overs, wickets, target = configure_match()
+    print(f"Overs   : {overs}")
+
+    print(f"Wickets : {wickets}")
+
+    print(f"Target  : {target}")
 
     score = 0
 
+    balls = 0
+
+    outcome = play_ball()
+
+    score = update_score(score, outcome)
+
+    balls = increment_ball(balls)
+
+    completed_overs = get_overs_completed(balls)
+
     print()
 
-    print(f"Target: {target}")
+    print(f" {outcome} run(s)")
 
-    print("Playing first ball...")
+    print(f"Score : {score}")
 
-    runs = play_ball()
+    print(f"Balls : {balls}")
 
-    score = update_score(score, runs)
-
-    print(f" You scored {runs} run(s)!")
-
-    print(f"Score: {score}/{wickets}")
+    print(f"Overs : {completed_overs}")
 
 if __name__ == "__main__":
 
