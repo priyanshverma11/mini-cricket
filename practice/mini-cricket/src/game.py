@@ -1,11 +1,20 @@
 import random
 
-def configure_match() -> tuple[int, int, int]:
-    overs = int(input("Enter number of overs: "))
-    wickets = int(input("Enter number of wickets: "))
-    target = int(input("Enter target score: "))
+def configure_match():
+    while True:
+        try:
+            overs = int(input("Enter number of overs: "))
+            wickets = int(input("Enter number of wickets: "))
+            target = int(input("Enter target score: "))
 
-    return overs, wickets, target
+            if overs <= 0 or wickets <= 0 or target <= 0:
+                print("Please enter positive values.")
+                continue
+
+            return overs, wickets, target
+
+        except ValueError:
+            print("Please enter valid numbers.")
 
 def get_batting_strategy() -> str:
     print()
