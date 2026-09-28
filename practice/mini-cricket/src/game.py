@@ -17,3 +17,7 @@ def play_ball():
 def update_score(current_score, runs):
 
     return current_score + runs
+
+def increment_ball(ball_number):
+
+    return ball_number + 1

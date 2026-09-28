@@ -1,4 +1,4 @@
-from src.game import configure_match, play_ball, update_score
+from game import (configure_match,play_ball,update_score,increment_ball)
 
 def main():
 
