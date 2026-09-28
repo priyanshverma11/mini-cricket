@@ -1,4 +1,4 @@
-from game import configure_match
+from game import configure_match, play_ball
 
 def main():
 
@@ -22,6 +22,13 @@ def main():
 
     print(f"Target: {target}")
 
+    print()
+
+    print("Playing first ball...")
+
+    runs = play_ball()
+
+    print(f" You scored {runs} run(s)!")
 
 if __name__ == "__main__":
 
