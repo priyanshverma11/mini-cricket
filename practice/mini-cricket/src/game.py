@@ -25,3 +25,5 @@ def increment_ball(ball_number: int) -> int:
 def get_overs_completed(balls: int) -> int:
 
     return balls // 6
+
+def is_wicket(outcome: int | str) -> bool: return outcome == "W"

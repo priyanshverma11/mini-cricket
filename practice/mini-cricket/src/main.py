@@ -1,4 +1,4 @@
-from game import (configure_match,get_overs_completed,increment_ball,play_ball,update_score)
+from game import (configure_match,get_overs_completed,increment_ball,play_ball,update_score,is_wicket)
 
 def main():
 
