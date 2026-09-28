@@ -10,9 +10,9 @@ def configure_match() -> tuple[int, int, int]:
 
     return overs, wickets, target
 
-def play_ball() -> int:
+def play_ball() -> int | str:
 
-    return random.choice([0, 1, 2, 3, 4, 6])
+    return random.choice([0, 1, 2, 3, 4, 6, "W"])
 
 def update_score(current_score: int, runs: int) -> int:
 
@@ -26,4 +26,6 @@ def get_overs_completed(balls: int) -> int:
 
     return balls // 6
 
-def is_wicket(outcome: int | str) -> bool: return outcome == "W"
+def is_wicket(outcome: int | str) -> bool:
+
+    return outcome == "W"
