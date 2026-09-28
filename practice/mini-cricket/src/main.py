@@ -1,3 +1,4 @@
+from display import display_match_summary
 from game import (
     configure_match,
     get_overs_completed,
@@ -6,7 +7,6 @@ from game import (
     play_ball,
     update_score,
 )
-
 
 def main():
     print("=" * 32)
@@ -42,10 +42,13 @@ def main():
         print(f"Score : {score}/{wickets_lost}")
         print(f"Overs : {completed_overs}")
 
-        if wickets_lost >= max_wickets:
-            print("\nAll wickets are lost!")
+        if score >= target:
             break
 
+        if wickets_lost >= max_wickets:
+            break
+
+    display_match_summary(score, wickets_lost, balls, target)
 
 if __name__ == "__main__":
     main()
