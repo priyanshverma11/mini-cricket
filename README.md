@@ -44,46 +44,42 @@ Focuses on reducing the chance of losing a wicket.
 Possible outcomes:
 ```text
 0, 0, 1, 1, 2, 4
-🛠️ Tech Stack
-Python 3
-Command Line / Terminal
-Python Standard Library
-Git
+```
+## 🛠️ Tech Stack
+- Python 3
+- Command Line / Terminal
+- Python Standard Library
+- Git
 No external Python dependencies are required.
 ## 📋 Requirements
 Before running the project, make sure the following are installed on your system:
-### Python 3
+#### Python 3
 Check whether Python 3 is installed:
 ```bash
 python3 --version
-```
+
 Example output:
-```text
 Python 3.12.0
 ```
 If Python 3 is not installed, install it from the official Python website.
-### Git
+#### Git
 Git is required to clone the repository and manage the project history.
 Check whether Git is installed:
 ```bash
 git --version
 ```
 Example output:
-```text
+```
 git version 2.50.0
 ```
-### No External Dependencies
-The project currently uses only the Python Standard Library.
-No external Python packages or dependency installation are required.
 ---
 ## 🚀 Getting Started
 Follow these steps to run Mini Cricket locally.
 ### 1. Clone the Repository
 Clone the repository using Git:
 ```bash
-git clone <repository-url>
+git clone https://github.com/priyanshverma11/mini-cricket.git
 ```
-Replace `<repository-url>` with the actual URL of the repository.
 ### 2. Navigate to the Project Directory
 ```bash
 cd mini-cricket
@@ -93,7 +89,6 @@ The project should have the following structure:
 ```text
 mini-cricket/
 ├── README.md
-├── .gitignore
 └── src/
     ├── main.py
     ├── game.py
@@ -121,37 +116,42 @@ Enter choice:
 ```
 ---
 🎯 Example Gameplay
-================================
-       🏏 MINI CRICKET
-================================
-Enter number of overs: 2
-Enter number of wickets: 2
-Enter target score: 10
-Overs   : 2
-Wickets : 2
-Target  : 10
-Choose your shot:
+
+- ================================
+-        🏏 MINI CRICKET
+- ================================
+- Enter number of overs: 2
+- Enter number of wickets: 2
+- Enter target score: 10
+- Overs   : 2
+- Wickets : 2
+- Target  : 10
+- Choose your shot:
 1. Defensive
 2. Normal
 3. Aggressive
-Enter choice: 2
+- Enter choice: 2
 📋
-Ball 1: 🏏 4 run(s)
---------------------------------
+- Ball 1: 🏏 4 run(s)
+
 Score : 4/0
 Overs : 0.1
---------------------------------
+
 The game continues until the target is reached, all wickets are lost, or the configured number of overs is completed.
-🧩 Python Concepts Practiced
+
+## 🧩 Python Concepts Practiced
 This project currently covers:
-Variables
-Data types
-Functions
-Function parameters and return values
-Type hints
-Conditional statements
-while loops
-Lists
-Sets
-Dictionaries
-Random number generation
+- Variables
+- Data types
+- Functions
+- Function parameters and return values
+- Type hints
+- Conditional statements
+- while loops
+- Lists
+- Sets
+- Dictionaries
+- Random number generation
+
+## VS CODE Output Image
+<img width="480" height="658" alt="image" src="https://github.com/user-attachments/assets/81badb44-924d-4084-abc4-b28f8489b76e" />
